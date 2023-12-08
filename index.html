@@ -1,63 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Furmani Arif - Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Furmani Arif</h1>
-      <h2>Full Stack Java Developer</h2>
-      <a href="#projects" class="btn">View Projects</a>
-    </div>
-  </section>
-  
-  <section id="about">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet mattis arcu, non lacinia libero vestibulum in. Donec nec ex sit amet nulla ultrices euismod. </p>
-    </div>
-  </section>
-  
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet mattis arcu, non lacinia libero vestibulum in.</p>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquet mattis arcu, non lacinia libero vestibulum in.</p>
+      <a class="navbar-brand" href="#">Your Name</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="container mt-5">
+    <h1>Your Name</h1>
+    <p>Passionate Full Stack Java Developer</p>
+    <!-- Add any other content you want for the home section -->
   </section>
-  
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+
+  <!-- About Section -->
+  <section id="about" class="container mt-5">
+    <h2>About Me</h2>
+    <p>Your introduction and background information go here.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container mt-5">
+    <h2>Skills</h2>
+    <!-- List your skills using Bootstrap badges or any other format you prefer -->
+    <span class="badge bg-primary">Java</span>
+    <span class="badge bg-success">Spring</span>
+    <span class="badge bg-info">Hibernate</span>
+    <!-- Add more skills here -->
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mt-5">
+    <h2>Projects</h2>
+    <!-- Showcase your projects with details -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Project 1</h5>
+        <p class="card-text">Description of Project 1. Technologies used: Java, Spring, etc.</p>
+        <a href="#" class="btn btn-primary">View Project</a>
+      </div>
     </div>
+    <!-- Add more project cards here -->
   </section>
-  
-  <footer>
-    <p>&copy; 2023 Furmani Arif</p>
-  </footer>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container mt-5">
+    <h2>Work Experience</h2>
+    <!-- List your work experience with details -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Company XYZ</h5>
+        <p class="card-text">Position: Full Stack Java Developer</p>
+        <p class="card-text">Description of your responsibilities and achievements.</p>
+      </div>
+    </div>
+    <!-- Add more work experience cards here -->
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="container mt-5">
+    <h2>Education</h2>
+    <!-- List your education details -->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">University ABC</h5>
+        <p class="card-text">Degree: Bachelor of Science in Computer Science</p>
+        <p class="card-text">Graduation Year: 20XX</p>
+      </div>
+    </div>
+    <!-- Add more education cards here -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mt-5">
+    <h2>Contact</h2>
+    <!-- Include a form or other contact information as per your preference -->
+    <p>Email: your.email@example.com</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+  </section>
+
+  <!-- Link to Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
