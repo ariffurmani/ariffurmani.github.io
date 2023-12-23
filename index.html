@@ -3,11 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Furmani Arif Y. - Portfolio</title>
   <!-- Link to Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Other head elements -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+  
   <style>
-    /* Add your custom styles here */
+    /* Add this style to set a fixed height for the project images */
+    .project-img {
+      height: 200px; /* Adjust the height as needed */
+      object-fit: cover;
+    }
+    /* CSS */
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-photo, .intro-text {
+  animation: fadeIn 1.5s ease-out;
+} */
+
   </style>
 </head>
 <body>
@@ -34,15 +59,32 @@
   </nav>
 
 
-  <!-- Hero Section -->
+<!-- HTML for css fade-->
+<!-- <section id="home" class="container mt-5 text-center">
+  <img src="image.jpg" alt="Your Name" class="rounded-circle intro-photo">
+  <div class="intro-text">
+    <h1 class="intro-heading">Your Name</h1>
+    <p class="lead intro-subheading">Passionate Full Stack Java Developer</p>
+  </div>
+</section> -->
+
+<!-- HTML for anime-->
+<!-- <section id="home" class="container mt-5 text-center">
+  <img src="image.jpg" alt="Your Name" class="rounded-circle intro-photo">
+  <div class="intro-text">
+    <h1 class="intro-heading">Your Name</h1>
+    <p class="lead intro-subheading">Passionate Full Stack Java Developer</p>
+  </div>
+</section> -->
+
+<!-- Hero Section -->
 <section id="home" class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100">
   <!-- Add your photo -->
-  <img src="image.jpg" alt="Your Name" class="rounded-circle" style="width: 150px; height: 150px;">
+  <!-- <img src="your-photo.jpg" alt="Your Name" class="rounded-circle" style="width: 150px; height: 150px;"> -->
   <h1 class="mt-3">Furmani Arif Y.</h1>
   <p class="lead">Passionate Full Stack Java Developer</p>
   <!-- Add any other content you want for the hero section -->
 </section>
-
  
 
   <!-- About Section -->
@@ -55,68 +97,167 @@
   
   <!-- Include the rest of your bio content here -->
 
+  <!-- Bio Section -->
+<section id="about" class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <!-- Add your photo with a rounded border -->
+      <img src="image.jpg" alt="Your Name" class="rounded-circle img-fluid" style="width: 200px; height: 200px; border: 5px solid #3498db;">
+    </div>
+    <div class="col-md-6">
+      <div class="bio-content">
+        <h2 class="text-primary">About Me</h2>
+        <p>
+          Hello, I'm <strong>Furmani Arif Y.</strong>, a seasoned Full Stack Java Developer with over 4 years of hands-on experience in crafting robust and scalable software solutions. My journey in the world of technology has allowed me to delve into a diverse range of technologies, both on the front end and back end, as well as cloud computing and database management.
+        </p>
+        <!-- <p>
+          I have a passion for creating innovative solutions that not only meet business needs but also exceed expectations. My expertise includes building efficient and maintainable code, leading development teams, and leveraging the latest technologies to deliver high-quality software.
+        </p> -->
+        <p>
+          In my career, I have successfully contributed to a variety of projects, from designing scalable backend systems to creating intuitive and responsive user interfaces. I thrive in collaborative environments and enjoy mentoring team members to help them reach their full potential.
+        </p>
+        <!-- Add more content about your achievements, projects, etc. -->
+      </div>
+    </div>
+  </div>
 </section>
 
 
-  <!-- Skills Section -->
-  <section id="skills" class="container mt-5">
-    <h2>Skills</h2>
-    <!-- List your skills using Bootstrap badges or any other format you prefer -->
-    <span class="badge bg-primary">Java</span>
-    <span class="badge bg-success">Spring</span>
-    <span class="badge bg-info">Hibernate</span>
-    <!-- Add more skills here -->
-  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container mt-5">
-    <h2>Projects</h2>
-    <!-- Showcase your projects with details -->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Project 1</h5>
-        <p class="card-text">Description of Project 1. Technologies used: Java, Spring, etc.</p>
-        <a href="#" class="btn btn-primary">View Project</a>
+  <!-- Project Section -->
+<section id="projects" class="container mt-5">
+  <h2>Projects</h2>
+
+  <!-- Project Cards -->
+  <div class="row">
+
+    <!-- Business Bill Project Card -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img src="business-bill.png" class="card-img-top project-img" alt="Business Bill Screenshot">
+        <div class="card-body">
+          <h5 class="card-title">Business Bill</h5>
+          <p class="card-text">
+            Business Bill is a comprehensive invoicing platform designed to streamline billing processes for small businesses. As the lead developer, I implemented features for creating, managing, and tracking invoices, ensuring a user-friendly experience.
+          </p>
+          <a href="https://www.businessbill.in/" class="btn btn-primary" target="_blank">View Project</a>
+        </div>
       </div>
     </div>
-    <!-- Add more project cards here -->
-  </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="container mt-5">
-    <h2>Work Experience</h2>
-    <!-- List your work experience with details -->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Company XYZ</h5>
-        <p class="card-text">Position: Full Stack Java Developer</p>
-        <p class="card-text">Description of your responsibilities and achievements.</p>
+    <!-- Beerrun Project Card -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img src="beerrun.png" class="card-img-top project-img" alt="Beerrun Screenshot">
+        <div class="card-body">
+          <h5 class="card-title">Beerrun</h5>
+          <p class="card-text">
+            Beerrun is a software solution designed for breweries to manage their operations efficiently. I contributed to the development of the inventory management module, enabling breweries to keep track of their stock and streamline their supply chain.
+          </p>
+          <a href="https://www.beerrunsoftware.com/" class="btn btn-primary" target="_blank">View Project</a>
+        </div>
       </div>
     </div>
-    <!-- Add more work experience cards here -->
-  </section>
 
-  <!-- Education Section -->
-  <section id="education" class="container mt-5">
-    <h2>Education</h2>
-    <!-- List your education details -->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">University ABC</h5>
-        <p class="card-text">Degree: Bachelor of Science in Computer Science</p>
-        <p class="card-text">Graduation Year: 20XX</p>
+    <!-- Collavate Project Card -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <img src="collavate.png" class="card-img-top project-img" alt="Collavate Screenshot">
+        <div class="card-body">
+          <h5 class="card-title">Collavate</h5>
+          <p class="card-text">
+            Collavate is a collaboration platform that facilitates document management and workflow automation. In my role as a full-stack developer, I contributed to the integration of cloud storage services and implemented collaboration features, enhancing the platform's functionality.
+          </p>
+          <a href="https://collavate.com/" class="btn btn-primary" target="_blank">View Project</a>
+        </div>
       </div>
     </div>
-    <!-- Add more education cards here -->
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container mt-5">
-    <h2>Contact</h2>
-    <!-- Include a form or other contact information as per your preference -->
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: linkedin.com/in/yourname</p>
-  </section>
+  </div>
+</section>
+
+<!-- Example of Combined Skills Section -->
+<section id="skills" class="container mt-5">
+  <h2>Skills</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Languages</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Java</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+      </div>
+      <!-- Repeat for other languages -->
+    </div>
+    <div class="col-md-6">
+      <h3>Frameworks & Tools</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Spring</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Angular</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">MySQL</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">GCP</div>
+      </div>
+      <!-- Repeat for other frameworks/tools -->
+    </div>
+  </div>
+</section>
+
+    <!-- <div class="col-md-6">
+      <h3>Frameworks</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Spring Boot</div>
+      </div>
+      <!-- Repeat for other frameworks -->
+    </div> -->
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="container-fluid bg-dark text-light mt-5 p-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact Information</h3>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Connect with Me</h3>
+        <!-- Add your social media links or other relevant links -->
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-light mr-3">LinkedIn</a>
+        <a href="https://twitter.com/yourusername" target="_blank" class="text-light mr-3">Twitter</a>
+        <a href="https://github.com/yourusername" target="_blank" class="text-light">GitHub</a>
+      </div>
+    </div>
+    <hr class="my-4">
+    <p class="text-center">© 2023 Your Name. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Include Anime.js library -->
+<script src="https://cdn.jsdelivr.net/npm/animejs"></script>
+
+<!-- JavaScript -->
+<script>
+anime.timeline({
+  targets: '.intro-photo, .intro-heading, .intro-subheading',
+  opacity: [0, 1],
+  translateY: [20, 0],
+  easing: 'easeOutQuad',
+  duration: 1500,
+  delay: function(el, i) {
+    return 300 * i;
+  }
+});
+</script>
+
 
   <!-- Link to Bootstrap JS (Optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
