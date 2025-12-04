@@ -1,0 +1,128 @@
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ExternalLink, Github, Database, Cloud, Code } from "lucide-react";
+
+export const Projects = () => {
+  const projects = [
+    {
+      title: "E-Commerce Microservices Platform",
+      description: "Scalable e-commerce platform built with Spring Boot microservices, featuring user management, product catalog, order processing, and payment integration.",
+      technologies: ["Java", "Spring Boot", "MySQL", "Redis", "Docker", "GCP"],
+      icon: <Database className="h-8 w-8" />,
+      // github: "https://github.com",
+      // demo: "https://demo.com",
+      highlights: ["Microservices Architecture", "High Availability", "Real-time Processing"]
+    },
+    {
+      title: "Cloud-Native Analytics Dashboard",
+      description: "Real-time analytics dashboard processing millions of events daily, with interactive visualizations and automated reporting capabilities.",
+      technologies: ["JavaScript", "React", "Node.js", "GCP BigQuery", "Kubernetes"],
+      icon: <Cloud className="h-8 w-8" />,
+      github: "https://github.com",
+      demo: "https://demo.com", 
+      highlights: ["Real-time Analytics", "Scalable Processing", "Interactive UI"]
+    },
+    {
+      title: "Enterprise Resource Planning System",
+      description: "Comprehensive ERP solution for mid-size businesses with modules for inventory, finance, HR, and project management.",
+      technologies: ["Java", "Spring Security", "PostgreSQL", "React", "Docker"],
+      icon: <Code className="h-8 w-8" />,
+      github: "https://github.com",
+      demo: "https://demo.com",
+      highlights: ["Enterprise Scale", "Security First", "Modular Design"]
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Featured Projects
+          </h2>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Showcasing scalable solutions and innovative approaches to complex problems
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card 
+              key={project.title}
+              className="bg-white/5 backdrop-blur-sm border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 animate-fade-in group h-full flex flex-col"
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
+              <CardHeader>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-2 bg-purple-500/20 rounded-lg text-purple-400">
+                    {project.icon}
+                  </div>
+                  <CardTitle className="text-white text-xl">
+                    {project.title}
+                  </CardTitle>
+                </div>
+                <CardDescription className="text-gray-300 text-base leading-relaxed">
+                  {project.description}
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent className="flex-1 flex flex-col">
+                <div className="space-y-6 flex-1">
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge 
+                        key={tech}
+                        variant="outline" 
+                        className="border-purple-400/30 text-purple-300 hover:bg-purple-400/20"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  <div className="space-y-2">
+                    <h4 className="text-sm font-semibold text-gray-300">Key Highlights</h4>
+                    <ul className="text-sm text-gray-400 space-y-1">
+                      {project.highlights.map((highlight) => (
+                        <li key={highlight} className="flex items-center gap-2">
+                          <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 pt-4 mt-auto">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex-1 border-purple-400/30 text-purple-300 hover:bg-purple-400/20"
+                    asChild
+                  >
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
+                    </a>
+                  </Button>
+                  <Button 
+                    size="sm" 
+                    className="flex-1 bg-purple-600 hover:bg-purple-700"
+                    asChild
+                  >
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Demo
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
