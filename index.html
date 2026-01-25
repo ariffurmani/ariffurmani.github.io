@@ -3,156 +3,243 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Furmani Arif | Software Developer Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta name="description" content="John Doe's software developer portfolio featuring ShipTime and BusinessBill.">
-<meta name="author" content="John Doe">
-<meta name="keywords" content="Java, Developer, Spring Boot, Portfolio, React, MySQL">
+  <title>Arif Furmani | Senior Backend Developer</title>
 
-<!-- Open Graph -->
-<meta property="og:title" content="Furmani Arif | Software Developer Portfolio">
-<meta property="og:description" content="Explore real-world projects. Java + Spring developer.">
-<meta property="og:image" content="images/preview.png">
-<meta property="og:url" content="https://your-portfolio.com">
-<meta property="og:type" content="website">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --border: #1f2933;
+    }
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="John Doe | Full Stack Java Developer">
-<meta name="twitter:description" content="View real-world projects like ShipTime and BusinessBill.">
-<meta name="twitter:image" content="images/preview.png">
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 64px 20px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.3;
+    }
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 28px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero .actions a {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 6px;
+      border: 1px solid var(--accent);
+      margin-right: 12px;
+      font-weight: 500;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: #020617;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      margin: 4px 6px 4px 0;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Sticky Navigation Bar -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="theme-toggle" title="Toggle Dark Mode">🌓</button></li>
-    </ul>
-  </nav>
 
-  <header>
-    <div class="hero-container">
-      <img src="images/profile.jpeg" alt="Profile" class="profile-pic" />
-      <h1>Furmani Arif Y.</h1>
-      <p class="animated-tagline">Full Stack Developer | Code. Build. Innovate.</p>
-    </div>
-  </header>
-
-  <!-- <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A web application that helps users track tasks and increase productivity.</p>
-        <p><strong>Tech Stack:</strong> React, Node.js, MongoDB</p>
-        <a href="#" class="project-link">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>An e-commerce site built with Java, Spring Boot, and React.</p>
-        <p><strong>Tech Stack:</strong> Java, Spring Boot, React</p>
-        <a href="#" class="project-link">View Project</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Arif Furmani</h1>
+      <p>
+        Senior Backend Developer with 5 years of experience building scalable,
+        production grade systems using Java, Spring Boot, and cloud technologies.
+      </p>
+      <div class="actions">
+        <a href="mailto:ariffurmani.77@gmail.com">Contact</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
       </div>
     </div>
-  </section> -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-  
-      <!-- Project 1: BusinessBill -->
-      <!-- <div class="project-card">
-        <h3>BusinessBill</h3>
-        <p>
-          BusinessBill is a comprehensive financial operations platform that
-          enables businesses and accounting firms to manage payables, receivables,
-          spend, expense tracking, and access business credit—all in one place.
-        </p>
-        <ul>
-          <li>💡 Automate AP & AR workflows</li>
-          <li>💳 Request virtual/physical cards, manage budgets, reimbursements</li>
-          <li>📊 Real-time reporting, integrations, expense controls</li>
-        </ul>
-        <a href="https://www.businessbill.in/" target="_blank" class="project-link">
-          Visit Website
-        </a>
-      </div> -->
-      <div class="project-card">
-        <img src="images/businessbill-logo.png" alt="BusinessBill" class="project-image" />
-        <h3>BusinessBill</h3>
-        <p><strong>Tech Stack:</strong> Java, MySQL, JavaScript, Struts</p>
-        <a href="https://www.businessbill.in/" target="_blank" class="project-link">
-          Visit Website
-        </a>
-      </div>
 
-      <div class="project-card">
-        <img src="images/shiptime-logo.png" alt="Shiptime" class="project-image" />
-        <h3>Shiptime</h3>
-        <p><strong>Tech Stack:</strong> Java, GWT, Spring, MySQL</p>
-        <a href="https://shiptime.com/" target="_blank" class="project-link">
-          Visit Website
-        </a>
-      </div>  
+    <div class="card">
+      <h3>Quick Info</h3>
+      <ul>
+        <li>📍 India</li>
+        <li>💼 Senior Backend Engineer, WebOsmotic</li>
+        <li>🚀 Team Lead</li>
+        <li>☁️ Cloud and Microservices</li>
+      </ul>
     </div>
   </section>
-  
 
-  <section id="skills" class="skills">
+  <!-- SKILLS -->
+  <section>
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Languages</h3>
-        <ul>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>HTML/CSS</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Frameworks</h3>
-        <ul>
-          <li>Spring Boot</li>
-          <li>React</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Tools</h3>
-        <ul>
-          <li>MySQL</li>
-          <li>Git</li>
-          <li>Docker</li>
-        </ul>
-      </div>
+    <div class="card">
+      <span class="tag">Java</span>
+      <span class="tag">Spring Boot</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">Microservices</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">Docker</span>
+      <span class="tag">AWS</span>
+      <span class="tag">Google Cloud</span>
+      <span class="tag">JUnit</span>
+      <span class="tag">Git</span>
+      <span class="tag">Linux</span>
+      <span class="tag">JavaScript</span>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form class="contact-form">
-      <div class="input-group">
-        <input type="text" placeholder="Your Name" required />
-      </div>
-      <div class="input-group">
-        <input type="email" placeholder="Your Email" required />
-      </div>
-      <div class="input-group">
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-      </div>
-      <div class="input-group">
-        <button type="submit">Send Message</button>
-      </div>
-    </form>
+  <!-- EXPERIENCE -->
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Software Engineer Backend</h3>
+      <p class="muted">WebOsmotic Pvt. Ltd. | Jan 2021 – Present</p>
+      <ul>
+        <li>Designed and maintained scalable backend services using Java, Spring Boot, REST APIs, and MySQL</li>
+        <li>Improved overall system performance by approximately 35 percent through backend and database optimizations</li>
+        <li>Collaborated with frontend, QA, and stakeholders to reduce rework and improve delivery outcomes</li>
+        <li>Led backend development, performed code reviews, and supported production releases</li>
+        <li>Mentored engineers and contributed to hiring and onboarding processes</li>
+      </ul>
+    </div>
   </section>
 
-  <script src="js/script.js"></script>
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Shiptime</h3>
+        <ul>
+          <li>Built backend features using Java, Spring, GWT, and MySQL in a distributed team setup</li>
+          <li>Integrated Shopify and Ecwid via secure REST APIs to improve merchant onboarding</li>
+          <li>Implemented Stripe payments including 3DS and PAD with strong test coverage</li>
+          <li>Containerized services using Docker for consistent deployments</li>
+        </ul>
+        <p class="muted">Tech: Java, Spring, MySQL, Docker, JUnit, Node.js</p>
+      </div>
+
+      <div class="card">
+        <h3>Cloud Provisioning Platform</h3>
+        <ul>
+          <li>Designed a standalone backend service to automate cloud resource provisioning</li>
+          <li>Exposed REST APIs for managing VMs, load balancers, Redis, SSL, and Cloud SQL</li>
+          <li>Used multithreading to reduce infrastructure setup time significantly</li>
+          <li>Deployed as a production ready solution on Google Cloud Marketplace</li>
+        </ul>
+        <p class="muted">Tech: Java, Spring Boot, MySQL, GCP</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>Scaler</strong> | Specialisation in Software Development | 2025</p>
+      <p class="muted">DSA, LLD, HLD, Databases</p>
+      <br />
+      <p><strong>Pacific School of Engineering</strong> | BE / B.Tech | 2018</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Arif Furmani | Backend Engineer
+  </footer>
+
+  <script>
+    console.log("Landing page loaded successfully");
+  </script>
+
 </body>
 </html>
